@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  text-align: center;
+}
+/* Style for each flashcard */
+.flashcard {
+  position: relative;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 20px;
+  cursor: pointer;
+  width: 300px; /* Adjust based on your preferred width */
+  height: 200px; /* Adjust based on your preferred height */
+  box-sizing: border-box; /* Ensure padding and border are included in the width/height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Style for the React logo inside the flashcard */
+.react-logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 40px; /* Adjust size of the logo */
+  height: 40px; /* Adjust size of the logo */
+  z-index: 10;
+  pointer-events: none; /* Prevent logo from interfering with card clicks */
+}
+
+/* Ensure the content does not overlap the logo */
+.card-content {
+  padding: 20px;
+  padding-top: 50px; /* Extra padding to ensure the text doesn't overlap the logo */
+}
+
+
+
+.flashcard.easy {
+  background-color: #a8e6cf; /* Light green */
+}
+
+.flashcard.medium {
+  background-color: #ffd3b6; /* Light orange */
+}
+
+.flashcard.hard {
+  background-color: #ffaaa5; /* Light red */
+}
+
+/* 
+.react-logo {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+} */
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
